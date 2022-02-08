@@ -37,48 +37,39 @@ void draw(){
     // viewpoint control
     if(key == 'z'){
       angleZ = angleZ + dif;
-    }
-    if(key == 'Z'){
+    } else if(key == 'Z'){
       angleZ = angleZ - dif;
     }
-
     // specify Pr coordinates
-    if(key == 'r'){
+      else if(key == 'r'){
       Py = 20;
       Px = 20;
       Pz = -10;
-    }
-    if(key == 'g'){
+    } else if(key == 'g'){
       Py = -30;
       Px = 20;
       Pz = 10;
-    }
-    if(key == 'b'){
+    } else if(key == 'b'){
       Py = -20;
       Px = -20;
       Pz = 30;
-    }
-    if(key == 'c'){
+    } else if(key == 'c'){
       Py = 10;
       Px = -30;
       Pz = 20;
-    }
-    if(key == 'm'){
+    } else if(key == 'm'){
       Py = -40;
       Px = -20;
       Pz = 0;
-    }
-    if(key == 'y'){
+    } else if(key == 'y'){
       Py = -10;
       Px = 40;
       Pz = 30;
-    }
-    if(key == 'k'){
+    } else if(key == 'k'){
       Py = 40;
       Px = -10;
       Pz = 20;
-    }
-    if(key == 'w'){
+    } else if(key == 'w'){
       Py = 30;
       Px = 30;
       Pz = 20;
