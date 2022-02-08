@@ -28,3 +28,7 @@ void setup(){
   camera(80, 80, 100, 0, 0, 0, 0, 0, -1);
   noStroke();  
 }
+
+void draw(){
+  
+}
