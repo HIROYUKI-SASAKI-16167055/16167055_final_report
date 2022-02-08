@@ -16,3 +16,5 @@ float angleZ = 0;
 float angle1 = 0;
 float angle2 = 0;
 float angle3 = 0;
+
+float dif = 5;
