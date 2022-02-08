@@ -7,3 +7,7 @@ float arm1L = 20;
 float arm2W = 10;
 float arm2D = 10;
 float arm2L = 30;
+
+float arm3W = 5;
+float arm3D = 5;
+float arm3L = 30;
