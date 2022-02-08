@@ -34,6 +34,12 @@ void draw(){
   directionalLight(255, 255, 255, -1, -1, -1);
 
   if(keyPressed){
-    
+    // viewpoint control
+    if(key == 'z'){
+      angleZ = angleZ + dif;
+    }
+    if(key == 'Z'){
+      angleZ = angleZ - dif;
+    }
   }
 }
