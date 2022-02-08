@@ -117,7 +117,6 @@ void draw(){
 
   //2nd link
   //go to 2nd joint
-  translate(0,0,0);
   rotateX(theta2);  
   //go to center of 2nd joint
   translate(0,0,arm2L/2);
