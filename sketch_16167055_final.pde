@@ -18,3 +18,7 @@ float angle2 = 0;
 float angle3 = 0;
 
 float dif = 5;
+
+float Px = 0;
+float Py = 0;
+float Pz = arm1L + arm2L + arm3L;
