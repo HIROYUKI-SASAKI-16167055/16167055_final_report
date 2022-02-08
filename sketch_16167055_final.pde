@@ -95,4 +95,22 @@ void draw(){
 
   rotateZ(radians(angleZ));
   translate(0,0,baseH/2);
+
+  //set colorPoint(x, y, z, r, g ,b)
+  //red
+  colorPoint(20, 20, -10, 255, 0, 0);
+  //green
+  colorPoint(-30, 20, 10, 0, 255, 0);
+  //blue
+  colorPoint(-20, -20, 30, 0, 0, 255);
+  //cyan
+  colorPoint(10, -30, 20, 0, 255, 255);
+  //magenta
+  colorPoint(-40, -20, 0, 255, 0, 255);
+  //yellow
+  colorPoint(-10, 40, 30, 255, 255, 0);
+  //black
+  colorPoint(40, -10, 20, 0, 0, 0);
+  //white
+  colorPoint(30, 30, 20, 255, 255, 255);
 }
