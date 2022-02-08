@@ -92,4 +92,7 @@ void draw(){
   float B = Pz-arm1L;
   float M = arm2L+arm3L*C3;
   float N = arm3L*S3;
+
+  rotateZ(radians(angleZ));
+  translate(0,0,baseH/2);
 }
