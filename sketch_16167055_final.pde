@@ -132,4 +132,13 @@ void draw(){
   translate(0,0,arm2L/2);
   fill(200);
   box(arm2W,arm2D,arm2L);
+
+  //3rd link
+  // go to 3rd joint
+  translate(0, 0, arm2L/2);
+  rotateX(atan2(S3, C3));
+  // go to center of 3rd joint
+  translate(0, 0, arm3L/2);
+  fill(250);
+  box(arm3W,arm3D,arm3L);
 }
