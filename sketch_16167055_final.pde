@@ -32,4 +32,8 @@ void setup(){
 void draw(){
   background(255);
   directionalLight(255, 255, 255, -1, -1, -1);
+
+  if(keyPressed){
+    
+  }
 }
