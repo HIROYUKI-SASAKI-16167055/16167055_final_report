@@ -84,4 +84,12 @@ void draw(){
       Pz = 20;
     }
   }
+
+  float C3 = (sq(Px)+sq(Py)+sq(Pz-arm1L)-sq(arm2L)-sq(arm3L))/(2*arm2L*arm3L);
+  float S3 = sqrt(1-sq(C3));
+  
+  float A = sqrt(sq(Px)+sq(Py));
+  float B = Pz-arm1L;
+  float M = arm2L+arm3L*C3;
+  float N = arm3L*S3;
 }
