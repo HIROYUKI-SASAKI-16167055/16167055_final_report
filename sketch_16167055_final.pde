@@ -113,4 +113,8 @@ void draw(){
   colorPoint(40, -10, 20, 0, 0, 0);
   //white
   colorPoint(30, 30, 20, 255, 255, 255);
+
+  //base
+  fill(100);
+  box(10,10,baseH);
 }
