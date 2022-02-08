@@ -13,10 +13,6 @@ float arm3D = 5;
 float arm3L = 30;
 
 float angleZ = 0;
-float angle1 = 0;
-float angle2 = 0;
-float angle3 = 0;
-
 float dif = 5;
 
 float Px = 0;
@@ -84,6 +80,10 @@ void draw(){
   float M = arm2L+arm3L*C3;
   float N = arm3L*S3;
 
+  float theta1 = atan2(Py, Px);
+  float theta2 = atan2((M*A-N*B),(N*A+M*B));
+  float theta3 = atan2(S3, C3);
+
   rotateZ(radians(angleZ));
   translate(0,0,baseH/2);
 
@@ -110,7 +110,7 @@ void draw(){
   box(10,10,baseH);
 
   //1st link
-  rotateZ(atan2(Py, Px));
+  rotateZ(theta1);
   translate(0,0,baseH/2+arm1L/2);
   fill(150);
   box(arm1W,arm1D,arm1L);
@@ -118,7 +118,7 @@ void draw(){
   //2nd link
   //go to 2nd joint
   translate(0,0,0);
-  rotateX(atan2((M*A-N*B),(N*A+M*B)));  
+  rotateX(theta2);  
   //go to center of 2nd joint
   translate(0,0,arm2L/2);
   fill(200);
@@ -127,7 +127,7 @@ void draw(){
   //3rd link
   // go to 3rd joint
   translate(0, 0, arm2L/2);
-  rotateX(atan2(S3, C3));
+  rotateX(theta3);
   // go to center of 3rd joint
   translate(0, 0, arm3L/2);
   fill(250);
