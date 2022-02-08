@@ -123,4 +123,13 @@ void draw(){
   translate(0,0,baseH/2+arm1L/2);
   fill(150);
   box(arm1W,arm1D,arm1L);
+
+  //2nd link
+  //go to 2nd joint
+  translate(0,0,0);
+  rotateX(atan2((M*A-N*B),(N*A+M*B)));  
+  //go to center of 2nd joint
+  translate(0,0,arm2L/2);
+  fill(200);
+  box(arm2W,arm2D,arm2L);
 }
