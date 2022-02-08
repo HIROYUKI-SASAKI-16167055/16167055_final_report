@@ -117,4 +117,10 @@ void draw(){
   //base
   fill(100);
   box(10,10,baseH);
+
+  //1st link
+  rotateZ(atan2(Py, Px));
+  translate(0,0,baseH/2+arm1L/2);
+  fill(150);
+  box(arm1W,arm1D,arm1L);
 }
