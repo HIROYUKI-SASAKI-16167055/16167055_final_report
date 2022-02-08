@@ -22,3 +22,9 @@ float dif = 5;
 float Px = 0;
 float Py = 0;
 float Pz = arm1L + arm2L + arm3L;
+
+void setup(){
+  size(1000, 800, P3D);  
+  camera(80, 80, 100, 0, 0, 0, 0, 0, -1);
+  noStroke();  
+}
